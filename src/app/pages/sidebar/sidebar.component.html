@@ -1,0 +1,10 @@
+<!-- Bottone per aprire/chiudere il menu -->
+<button (click)="toggleMenu()" class="menu-toggle">☰ Menu</button>
+
+<!-- Sidebar -->
+<div [class.open]="isOpen" class="sidebar">
+  <a href="#">Home</a>
+  <a href="#">Profilo</a>
+  <a href="#">Impostazioni</a>
+  <a href="#">Logout</a>
+</div>

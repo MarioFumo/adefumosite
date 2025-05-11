@@ -2,13 +2,13 @@
     <div class="title">
         sito di ade
     </div>
-    <div class="images-container">
-        <img src="https://www.arredimurali.it/wp-content/uploads/2019/11/Quadri-moderni-Van-Gogh-3-tele.jpg" height="500px">
-         
-         <img src="https://www.arredimurali.it/wp-content/uploads/2019/11/Quadri-moderni-Van-Gogh-3-tele.jpg" height="500px">
-         
-         <img src="https://www.arredimurali.it/wp-content/uploads/2019/11/Quadri-moderni-Van-Gogh-3-tele.jpg" height="500px">
-        
-         <img src="https://www.arredimurali.it/wp-content/uploads/2019/11/Quadri-moderni-Van-Gogh-3-tele.jpg" height="500px">
-    </div> 
+
+    <app-sidebar></app-sidebar>
+
+
+
+<div class="images-container">
+  <img *ngFor="let imageUrl of imageUrls" [src]="imageUrl" height="500px">
+</div>
+
 </div>

@@ -1,0 +1,16 @@
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 16px 0px;
+}
+
+.title{
+    font-family: math;
+    font-size: 60px;
+}
+.container {
+    display: flex;
+    align-items: anchor-center;
+    flex-direction: column;
+}

@@ -1,0 +1,6 @@
+<div class="lightbox" *ngIf="isVisible" (click)="closeLightbox()">
+  <div class="lightbox-content" (click)="$event.stopPropagation()">
+    <img [src]="imageUrl" alt="Enlarged image">
+    <button (click)="printImage()">Stampa Immagine</button>
+  </div>
+</div>

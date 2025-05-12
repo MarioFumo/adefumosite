@@ -3,8 +3,8 @@
 
 <!-- Sidebar -->
 <div [class.open]="isOpen" class="sidebar">
-  <a href="#">Home</a>
-  <a href="#">Profilo</a>
-  <a href="#">Impostazioni</a>
-  <a href="#">Logout</a>
+  <a [routerLink]="['/home']">Home</a>
+  <a [routerLink]="['/portfolio']">Portfolio</a>
+  <a [routerLink]="['/bio']">Su di me</a>
+  <a [routerLink]="['/contacts']">Contatti</a>
 </div>

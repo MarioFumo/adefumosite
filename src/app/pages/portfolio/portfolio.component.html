@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Portfolio</h1>
+    <app-sidebar></app-sidebar>
+    <!-- portfolio.component.html -->
+    <div class="image-gallery">
+        <div *ngFor="let image of images">
+            <img [src]="image.url" [alt]="image.title" (click)="lightbox.openLightbox(image.url)" />
+        </div>
+    </div>
+
+    <!-- Importa il lightbox component -->
+    <app-lightbox #lightbox></app-lightbox>
+
+</div>
